@@ -1,0 +1,7 @@
+filename,degraded_from,shrink,blur,brightness,crop
+ambiguous_07.jpg,fox_02.jpg,8,2,0.5,
+ambiguous_08.jpg,wolf_02.jpg,8,2,0.5,
+ambiguous_09.jpg,bear_04.jpg,3,3,0.8,"(0.0, 0.0, 0.35, 0.35)"
+ambiguous_10.jpg,dog_05.jpg,2,1,0.2,
+ambiguous_11.jpg,deer_06.jpg,4,7,0.9,
+ambiguous_12.jpg,wolf_05.jpg,3,2,0.7,"(0.55, 0.0, 1.0, 0.45)"
