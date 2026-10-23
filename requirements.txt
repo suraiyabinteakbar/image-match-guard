@@ -2,3 +2,5 @@ requests
 python-dotenv
 pillow
 pytest
+pydantic
+google-genai
