@@ -3,4 +3,5 @@ python-dotenv
 pillow
 pytest
 pydantic
-google-genai
+google-genai 
+sqlalchemy
