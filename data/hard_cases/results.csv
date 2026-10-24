@@ -1,0 +1,6 @@
+filename,true_group,model_group,confidence,model_subject
+husky_01.jpg,dog,dog,0.98,dog (mixed breed)
+husky_02.jpg,dog,dog,0.98,Siberian Husky
+husky_03.jpg,dog,dog,0.99,Husky dog
+husky_04.jpg,dog,dog,0.98,Siberian Husky puppy
+husky_05.jpg,dog,dog,0.99,Husky
