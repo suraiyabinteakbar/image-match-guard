@@ -37,3 +37,28 @@ def cosine(a, b):
     if na == 0 or nb == 0:
         return 0.0
     return dot / (na * nb)
+def embed_all_captions(session, client, model, dims=768):
+    """Embed every image caption that has no vector yet. Logs each call."""
+    from sqlalchemy import select
+    from app.db import CostLog, Image
+
+    todo = list(session.scalars(
+        select(Image).where(Image.caption.is_not(None),
+                            Image.caption_vector.is_(None))))
+    done = 0
+    for img in todo:
+        try:
+            vectors, _ = embed_texts(client, model, [img.caption], dims)
+        except Exception as e:
+            session.add(CostLog(kind="embedding", model=model, image_id=img.id,
+                                cost_usd=0.0, status="error"))
+            session.commit()
+            print(f"FAILED {img.filename}: {str(e)[:150]}")
+            continue
+        img.caption_vector = vectors[0]
+        session.add(CostLog(kind="embedding", model=model, image_id=img.id,
+                            cost_usd=0.0, status="ok"))
+        session.commit()
+        done += 1
+        print(f"[{done}/{len(todo)}] {img.filename}")
+    return done
