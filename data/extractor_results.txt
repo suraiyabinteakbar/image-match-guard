@@ -1,0 +1,29 @@
+#1  The behavior of red foxes       true=fox    dict=fox    gemini=fox    final=fox    
+#2  A winter walk with Vulpes vulp  true=fox    dict=fox    gemini=fox    final=fox    
+#3  Why wolves howl                 true=wolf   dict=wolf   gemini=wolf   final=wolf   
+#4  Living with a family retriever  true=dog    dict=dog    gemini=dog    final=dog    
+#5  Bears before winter             true=bear   dict=bear   gemini=bear   final=bear   
+#6  Deer at dawn                    true=deer   dict=deer   gemini=deer   final=deer   
+#7  A stag in the autumn rut        true=deer   dict=deer   gemini=deer   final=deer   
+#8  Raising a gray puppy            true=dog    dict=dog    gemini=dog    final=dog    
+#9  Foxes and wolves compared       true=other  dict=other  gemini=other  final=other  
+#10 Life of the platypus            true=other  dict=other  gemini=other  final=other  
+#11 Why cats purr                   true=cat    dict=cat    gemini=cat    final=cat    
+#12 Night hunters of the forest     true=owl    dict=owl    gemini=owl    final=owl    
+#13 Grizzly bears fishing for salm  true=bear   dict=bear   gemini=bear   final=bear   
+#14 A new puppy at home             true=dog    dict=dog    gemini=dog    final=dog    
+#15 The hedgerow hunter             true=fox    dict=other  gemini=fox    final=other  MISS
+#16 Life in the pack                true=wolf   dict=other  gemini=wolf   final=other  MISS
+#17 Mans best friend                true=dog    dict=other  gemini=dog    final=other  MISS
+#18 Winter sleepers of the mountai  true=bear   dict=other  gemini=bear   final=other  MISS
+#19 Antlers in the mist             true=deer   dict=other  gemini=deer   final=other  MISS
+#20 Silent flyers of the night      true=owl    dict=other  gemini=owl    final=other  MISS
+#21 Why do pets purr                true=cat    dict=other  gemini=cat    final=other  MISS
+#22 Animals of the forest           true=other  dict=other  gemini=other  final=other  
+#23 The fox that was mistaken for   true=fox    dict=other  gemini=fox    final=other  MISS
+
+Posts counted: 23
+  dictionary  15/23 correct
+  gemini      23/23 correct
+  both agree  15/23 correct
+Wrong animal passed on to the guard: 0
