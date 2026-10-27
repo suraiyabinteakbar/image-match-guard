@@ -1,0 +1,25 @@
+cutoff  exact photo   right animal  wrong animal  no match  refused ok
+0.1     5/12          12/12          0             0         2/2
+0.15    5/12          12/12          0             0         2/2
+0.2     5/12          12/12          0             0         2/2
+0.25    4/12          11/12          0             1         2/2
+0.3     4/12          11/12          0             1         2/2
+0.35    3/12          9/12          0             3         2/2
+0.4     3/12          9/12          0             3         2/2
+0.5     0/12          1/12          0             11        2/2
+
+Detail at cutoff 0.2
+#1  The behavior of red foxes     answer=fox_04.jpg       key=fox_01.jpg       
+#2  A winter walk with Vulpes vu  answer=fox_04.jpg       key=fox_10.jpg       
+#3  Why wolves howl               answer=wolf_01.jpg      key=wolf_04.jpg      
+#4  Living with a family retriev  answer=dog_08.jpg       key=dog_08.jpg       
+#5  Bears before winter           answer=bear_02.jpg      key=bear_01.jpg      
+#6  Deer at dawn                  answer=deer_06.jpg      key=deer_07.jpg      
+#7  A stag in the autumn rut      answer=deer_05.jpg      key=deer_08.jpg      
+#8  Raising a gray puppy          answer=dog_10.jpg       key=dog_10.jpg       
+#9  Foxes and wolves compared     answer=NO MATCH         key=(refuse)         
+#10 Life of the platypus          answer=NO MATCH         key=(refuse)         
+#11 Why cats purr                 answer=ambiguous_04.jpg key=ambiguous_04.jpg 
+#12 Night hunters of the forest   answer=ambiguous_02.jpg key=ambiguous_02.jpg 
+#13 Grizzly bears fishing for sa  answer=bear_02.jpg      key=bear_10.jpg      
+#14 A new puppy at home           answer=dog_01.jpg       key=dog_01.jpg       

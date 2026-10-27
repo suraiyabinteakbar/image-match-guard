@@ -28,7 +28,7 @@ def test_other_image_group_is_rejected():
 
 
 def test_low_similarity_is_rejected():
-    d = check("fox", 0.99, False, "fox", 0.40)
+    d = check("fox", 0.99, False, "fox", 0.10)
     assert "below threshold" in d.reason
 
 

@@ -5,7 +5,7 @@ Rules and order come from docs/design.md, section 5. All must pass.
 from dataclasses import dataclass
 
 CONFIDENCE_MIN = 0.60
-SIMILARITY_MIN = 0.70  # starting guess; tuned on the eval set later
+SIMILARITY_MIN = 0.20  # chosen from data: highest value that loses no post (see README)
 
 
 @dataclass
