@@ -1,0 +1,15 @@
+id,title,body,true_group,correct_image
+1,The behavior of red foxes,Red foxes hunt at dusk and cache food under leaves. They live alone for most of the year.,fox,fox_01.jpg
+2,A winter walk with Vulpes vulpes,Researchers followed Vulpes vulpes across fresh snow and tracked its hunting trails.,fox,fox_10.jpg
+3,Why wolves howl,Gray wolves howl to keep their pack together and mark territory across the forest.,wolf,wolf_04.jpg
+4,Living with a family retriever,These friendly dogs love to fetch and need a long walk every day.,dog,dog_08.jpg
+5,Bears before winter,Brown bears eat as much as they can in autumn to build fat for hibernation.,bear,bear_01.jpg
+6,Deer at dawn,White-tailed deer feed in open grass at first light and watch for danger.,deer,deer_07.jpg
+7,A stag in the autumn rut,A stag with large antlers calls out to rivals during the autumn breeding season.,deer,deer_08.jpg
+8,Raising a gray puppy,A young puppy with blue eyes needs early training and a lot of patience.,dog,dog_10.jpg
+9,Foxes and wolves compared,Foxes and wolves are both wild canines but differ in size and in how they hunt.,other,
+10,Life of the platypus,The platypus is a shy egg-laying mammal that lives in rivers in eastern Australia.,other,
+11,Why cats purr,A cat purrs when it is relaxed and sometimes when it is stressed or in pain.,cat,ambiguous_04.jpg
+12,Night hunters of the forest,An owl hunts silently at night using sharp hearing and soft feathers.,owl,ambiguous_02.jpg
+13,Grizzly bears fishing for salmon,Grizzly bears gather at rivers to catch salmon as the fish swim upstream.,bear,bear_10.jpg
+14,A new puppy at home,A white puppy settles in on the deck and learns the first rules of the house.,dog,dog_01.jpg
