@@ -5,3 +5,6 @@ pytest
 pydantic
 google-genai 
 sqlalchemy
+fastapi
+uvicorn
+httpx

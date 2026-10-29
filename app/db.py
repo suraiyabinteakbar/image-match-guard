@@ -94,7 +94,10 @@ class Job(Base):
     created_at: Mapped[datetime] = mapped_column(DateTime, default=now)
 
 
-engine = create_engine(DB_URL)
+engine = create_engine(
+    DB_URL,
+    connect_args={"check_same_thread": False} if DB_URL.startswith("sqlite") else {},
+)
 SessionLocal = sessionmaker(engine)
 
 

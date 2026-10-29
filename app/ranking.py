@@ -12,6 +12,7 @@ def rank_images(session, post_vector):
     rows = []
     for img in images:
         rows.append({
+            "image_id": img.id,
             "image": img.filename,
             "image_group": img.group_name,
             "confidence": img.confidence,
