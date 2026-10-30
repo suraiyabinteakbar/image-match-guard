@@ -12,7 +12,7 @@ each article, and refuse (with a reason) when no image is good enough.
 ## 3. Image metadata schema (validated with Pydantic)
 {
   "subject": "red fox",
-  "group": "fox",
+  "group_name": "fox",
   "category": "animal",
   "attributes": ["orange fur", "forest"],
   "caption": "A red fox standing in a forest",
@@ -54,7 +54,7 @@ agreement on the eval posts and report all three numbers.
 3. Group match: image.group == post.expected_group, else REJECT
    "group mismatch: expected fox, detected wolf".
    If image.group is "other", REJECT "cannot verify image subject".
-4. Similarity: cosine >= T (tuned on the eval set, initial guess 0.70), else
+4. Similarity: cosine >= T (tuned on the eval set, initial guess 0.20), else
    REJECT "similarity below threshold".
 If every candidate is rejected -> "no confident match" + the reasons.
 
