@@ -39,7 +39,7 @@ I use two extractors because each one fails in a different way. The dictionary i
 1. Confidence: image.confidence >= 0.60 and not flagged, else REJECT "low confidence image".
 2. Post group known: post.expected_group != "other", else REJECT "cannot verify what the post is about".
 3. Group match: image.group_name == post.expected_group, else REJECT "group mismatch: expected fox, detected wolf". If image.group_name is "other", REJECT "cannot verify image subject".
-4. Similarity: cosine >= T (T = 0.20 was chosen from data on the eval set), else REJECT "similarity below threshold".
+4. Similarity: cosine >= T (T = 0.20, chosen from the eval set; the first guess of 0.70 refused everything).
 If every candidate is rejected -> "no confident match" + the reasons.
 
 ## 5b. Safety and reliability
@@ -65,7 +65,7 @@ Vectors are stored as JSON arrays on the image and post rows instead of in separ
 - data/eval_set.csv: 10+ posts, each labeled with its one correct image and its true group.
 - Metrics: top-1 precision for ranking; accuracy of each group extractor (dictionary, Gemini, and agreement of both).
 - T is chosen by sweeping values on this set.
-- Extractor results: Dictionary alone 15/23, Gemini alone 23/23, Both agree 15/23.
+- Result: dictionary 15/23, Gemini 23/23, both agree 15/23, wrong animal passed 0 (see data/extractor_results.txt).
 
 ## 8. Known risks
 - Model confidence can be high even when the model is wrong.
