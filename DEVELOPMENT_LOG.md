@@ -37,6 +37,7 @@ Decisions that were mine:
 | `test_low_similarity_is_rejected` failed | The test used 0.40, which is above the new cutoff, so the guard accepted it | Changed the test value to 0.10 |
 | `ImportError: cannot import name 'SessionLocal'` | While editing `db.py` for the API, the `SessionLocal` line was lost | Restored the bottom of the file. The edit also added `check_same_thread=False`, which SQLite needs for a web server |
 | First `pytest` run took 235 seconds | Slow first start on my PC | The second run took a few seconds. Not investigated further |
+| pytest failed on a clean clone | It collected `scripts/test_*.py`, which call Gemini and need a key | Added `pytest.ini` so pytest runs only `tests/` |
 
 ## The threshold story
 
